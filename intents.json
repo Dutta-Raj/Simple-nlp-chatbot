@@ -1,0 +1,31 @@
+intents_data = '''
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I help you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Goodbye"],
+      "responses": ["Goodbye!", "Take care!", "See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Much appreciated"],
+      "responses": ["You're welcome!", "No problem!", "Any time!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "Who are you?"],
+      "responses": ["I'm your AI assistant!", "I'm a chatbot created with Python."]
+    }
+  ]
+}
+'''
+
+with open("intents.json", "w") as f:
+    f.write(intents_data)
+
+print("✅ intents.json created")
